@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAFETY PREDICTION</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2><u>TRAFFIC PROGNOSTICATOR</u></h2>
+    <div id="container">
+        <form action="http://127.0.0.1:5000/" method="post" class="form">
+            <p>
+                Url : <select name="url" class="in">
+                    <option value="">--Select a option--</option>
+                    <option value="HomePageUrl">HomePageUrl</option>
+                    <option value="SubpageUrl">SubpageUrl</option>
+                    <option value="ProductUrl">ProductUrl</option>
+                    <option value="LoginUrl">LoginUrl</option>
+                    <option value="ContactorSupportUrl">ContactorSupportUrl</option>
+                    <option value="ErrorPageUrl">ErrorPageUrl</option>
+                </select>
+             </p> <br>
+           <p> page_views : <br> <input type="number" name="pageviews"  required class="in"> </p>
+           <br>
+           <p> session_duration : <br> <input type="number" name="session_duration" class="in"  required> </p>
+           <br>
+           <p> bounce_rate : <br> <input type="number" name="bouncerate" class="in" required> </p>
+           <br>
+           <p> device_type :<br>  <input type="number" name="devicetype" class="in"  required> </p>
+           <br>
+           <p> browser : <br> <input type="number" name="browser" class="in"  required> </p>
+           <br>
+           <p> operating_system : <br> <input type="number" name="operatingsystem" class="in"  required> </p>
+           <br>
+            <p><input type="submit" value="PREDICT" class="in"></p>
+            <br>
+        </form>
+    </div>
+</body>
+</html>
